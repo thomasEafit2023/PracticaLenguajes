@@ -2,5 +2,8 @@ package Creator;
 
 public enum TypeOfBeing {
     HUMAN,
-    BIRD
+    BIRD,
+    ANGEL,
+    EAGLE,
+    GARGOYLE
 }
