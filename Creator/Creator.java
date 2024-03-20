@@ -8,6 +8,6 @@ import SkyBeings.SkyBeing;
 import java.text.MessageFormat;
 
 public interface Creator {
-    public LivingBeing createLivingBeing(TypeOfBeing type);
+    public LivingBeing createLivingBeing(TypeOfBeing type) throws ClassNotFoundException;
 
 }
