@@ -32,4 +32,9 @@ public class Gargoyle extends LivingBeing implements SkyBeing {
     public void land() {
         System.out.println("Gargoyle landing on its perch");
     }
+
+    @Override
+    public void changeDimension() {
+        SkyBeing.super.changeDimension();
+    }
 }

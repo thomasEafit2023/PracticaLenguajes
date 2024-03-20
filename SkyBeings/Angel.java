@@ -31,4 +31,9 @@ public class Angel extends LivingBeing implements SkyBeing {
     public void land() {
         System.out.println("Angel gracefully landing");
     }
+
+    @Override
+    public void changeDimension() {
+        SkyBeing.super.changeDimension();
+    }
 }

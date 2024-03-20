@@ -6,7 +6,7 @@ public class Human extends LivingBeing implements EarthBeing, SkyBeing {
 
     @Override
     public void reproduce() {
-        System.out.println("Reproducing a Human Being");
+        System.out.println("Human making love");
     }
 
     @Override
