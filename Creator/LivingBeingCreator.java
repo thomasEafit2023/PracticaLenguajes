@@ -1,6 +1,9 @@
 package Creator;
 
+import BeingsOfTheEarth.Donkey;
 import BeingsOfTheEarth.Human;
+import BeingsOfTheEarth.Lemur;
+import BeingsOfTheEarth.Werewolf;
 import LivingBeing.LivingBeing;
 import SkyBeings.Angel;
 import SkyBeings.Bird;
@@ -17,6 +20,9 @@ public class LivingBeingCreator implements Creator {
             case ANGEL -> {return new Angel();}
             case EAGLE -> {return new Eagle();}
             case GARGOYLE -> {return new Gargoyle();}
+            case DONKEY -> {return new Donkey();}
+            case LEMUR -> {return new Lemur();}
+            case WEREWOLF -> {return new Werewolf();}
             default -> {
                 throw new ClassNotFoundException(MessageFormat.format("${0} class doesn't exist", type));
             }

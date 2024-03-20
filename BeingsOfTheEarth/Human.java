@@ -2,6 +2,9 @@ package BeingsOfTheEarth;
 import LivingBeing.LivingBeing;
 import SkyBeings.SkyBeing;
 
+
+/* La clase Human extiende de la clase abstracta LivingBeing e implementa las interfaces EarthBeing y SkyBeing
+para que sea la unica clase perteneciente al paquete BeingOfTheEarth que pueda acceder a los metodos de SkyBeing*/
 public class Human extends LivingBeing implements EarthBeing, SkyBeing {
 
     @Override
