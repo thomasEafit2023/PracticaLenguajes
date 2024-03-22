@@ -10,7 +10,8 @@ import SkyBeings.Gargoyle;
 import java.text.MessageFormat;
 
 public class LivingBeingCreator implements Creator {
-    public static LivingBeing createLivingBeing(TypeOfBeing type) throws ClassNotFoundException {
+    @Override
+    public LivingBeing createLivingBeing(TypeOfBeing type) throws ClassNotFoundException {
         switch (type){
             case HUMAN -> {return new Human();}
             case BIRD -> {return new Bird();}

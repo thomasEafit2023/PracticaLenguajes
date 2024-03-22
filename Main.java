@@ -6,16 +6,18 @@ import Creator.TypeOfBeing;
 import LivingBeing.LivingBeing;
 import SkyBeings.Angel;
 import SkyBeings.Bird;
-import SkyBeings.Gargoyle;
+
 
 public class Main {
     public static void main(String[] args) {
+
+        LivingBeingCreator factory = new LivingBeingCreator();
 
         /* Se instancian los objetos dentro de un try-catch ya que se esta utilizando manejo de excepciones
         en el metodo createLivingBeing() de la interfaz Creator y la clase LivingBeingCreator */
         try{
             System.out.println("Maestro TIC:");
-            LivingBeing humano = LivingBeingCreator.createLivingBeing(TypeOfBeing.HUMAN); // Creamos objeto tipo Humano a travez del metodo Factory
+            LivingBeing humano = factory.createLivingBeing(TypeOfBeing.HUMAN); // Creamos objeto tipo Humano a travez del metodo Factory
             humano.born();
             humano.grow();
             humano.reproduce();
@@ -29,7 +31,7 @@ public class Main {
             System.out.println();
 
             System.out.println("Objeto Gaviota:");
-            LivingBeing gaviota = LivingBeingCreator.createLivingBeing(TypeOfBeing.BIRD);
+            LivingBeing gaviota = factory.createLivingBeing(TypeOfBeing.BIRD);
             gaviota.born();
             gaviota.grow();
             gaviota.reproduce();
@@ -42,7 +44,7 @@ public class Main {
             System.out.println();
 
             System.out.println("Objeto Hombre Lobo:");
-            LivingBeing werewolf = LivingBeingCreator.createLivingBeing(TypeOfBeing.WEREWOLF);
+            LivingBeing werewolf = factory.createLivingBeing(TypeOfBeing.WEREWOLF);
             werewolf.born();
             werewolf.grow();
             werewolf.reproduce();
@@ -55,7 +57,7 @@ public class Main {
             System.out.println();
 
             System.out.println("Objeto Angel:");
-            LivingBeing angelito = LivingBeingCreator.createLivingBeing(TypeOfBeing.ANGEL);
+            LivingBeing angelito = factory.createLivingBeing(TypeOfBeing.ANGEL);
             angelito.born();
             angelito.grow();
             ((Angel) angelito).fly();
@@ -67,8 +69,8 @@ public class Main {
             System.out.println("-------------------------------------------------------");
             System.out.println();
 
-            System.out.println("Objeto Angel:");
-            LivingBeing burrito = LivingBeingCreator.createLivingBeing(TypeOfBeing.DONKEY);
+            System.out.println("Objeto Donkey:");
+            LivingBeing burrito = factory.createLivingBeing(TypeOfBeing.DONKEY);
             burrito.born();
             burrito.grow();
             ((Donkey) burrito).eatGrass();
