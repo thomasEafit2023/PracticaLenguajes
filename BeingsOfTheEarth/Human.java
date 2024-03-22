@@ -41,4 +41,6 @@ public class Human extends LivingBeing implements EarthBeing, SkyBeing {
     public void land() {
         System.out.println("Human landing through an airplane");
     }
+
+    public void lie(){System.out.println("Human talking sh*t");}
 }
