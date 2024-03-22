@@ -1,4 +1,5 @@
 package SkyBeings;
+import BeingsOfTheEarth.EarthBeing;
 import LivingBeing.LivingBeing;
 
 public class Angel extends LivingBeing implements SkyBeing {

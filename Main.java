@@ -1,6 +1,7 @@
+import BeingsOfTheEarth.Donkey;
 import BeingsOfTheEarth.Human;
 import BeingsOfTheEarth.Werewolf;
-import Creator.LivingBeingCreator;
+import Creator.LivingBeingCreator; // crea skybeings y earth
 import Creator.TypeOfBeing;
 import LivingBeing.LivingBeing;
 import SkyBeings.Angel;
@@ -61,6 +62,19 @@ public class Main {
             ((Angel) angelito).changeDimension();
             ((Angel) angelito).land();
             angelito.die();
+
+            System.out.println();
+            System.out.println("-------------------------------------------------------");
+            System.out.println();
+
+            System.out.println("Objeto Angel:");
+            LivingBeing burrito = LivingBeingCreator.createLivingBeing(TypeOfBeing.DONKEY);
+            burrito.born();
+            burrito.grow();
+            ((Donkey) burrito).eatGrass();
+            ((Donkey) burrito).respawn();
+            burrito.reproduce();
+            burrito.die();
 
         }catch (Exception e){
             e.printStackTrace();

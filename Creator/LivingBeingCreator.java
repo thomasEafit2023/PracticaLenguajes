@@ -1,9 +1,6 @@
 package Creator;
 
-import BeingsOfTheEarth.Donkey;
-import BeingsOfTheEarth.Human;
-import BeingsOfTheEarth.Lemur;
-import BeingsOfTheEarth.Werewolf;
+import BeingsOfTheEarth.*;
 import LivingBeing.LivingBeing;
 import SkyBeings.Angel;
 import SkyBeings.Bird;
