@@ -25,6 +25,7 @@ public class Main {
             ((Human)humano).land();
             ((Human)humano).respawn();
             humano.die();
+            ((Human) humano).lie();
 
             System.out.println();
             System.out.println("------------------------------------------------------");
